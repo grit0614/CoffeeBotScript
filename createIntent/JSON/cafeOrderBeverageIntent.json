@@ -1,0 +1,152 @@
+{
+    "confirmationPrompt": {
+        "maxAttempts": 2, 
+        "messages": [
+            {
+                "content": "You'd like to order a {BeverageSize} {BeverageType} {BeverageTemp}. Is that right?", 
+                "contentType": "PlainText"
+            }
+        ]
+    }, 
+    "name": "cafeOrderBeverageIntent", 
+    "rejectionStatement": {
+        "messages": [
+            {
+                "content": "Okay. See you next time!", 
+                "contentType": "PlainText"
+            }
+        ]
+    }, 
+    "sampleUtterances": [
+        "I would like a {BeverageSize} {BeverageType}", 
+        "Can I get a {BeverageType}",
+        "May I have a {BeverageSize} {Creamer} {BeverageStrength} {BeverageType}",
+        "Can I get a {BeverageSize} {BeverageTemp} {Creamer} {BeverageStrength} {BeverageType}",
+        "Let me get a {BeverageSize} {Creamer} {BeverageType}"
+    ], 
+    "slots": [
+        {
+            "slotType": "cafeBeverageType", 
+            "name": "BeverageType", 
+            "slotConstraint": "Required", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "What kind of beverage would you like? For example, mocha, chai, etc.", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 1, 
+            "slotTypeVersion": "$LATEST",
+            "description": "Determines the type of beverage to be served"
+        }, 
+        {
+            "slotType": "cafeBeverageSize", 
+            "name": "BeverageSize", 
+            "slotConstraint": "Required", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "What size? small, medium, large??", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 2, 
+            "slotTypeVersion": "$LATEST",
+            "description": "Determines the size of drink"
+        }, 
+        {
+            "slotType": "cafeCreamerType", 
+            "name": "Creamer", 
+            "slotConstraint": "Optional", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "What kind of milk or creamer?", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 3, 
+            "slotTypeVersion": "$LATEST",
+            "description": "Determines the creamer"
+        },
+        {
+            "slotType": "cafeBeverageTemp", 
+            "name": "BeverageTemp", 
+            "slotConstraint": "Required", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "Would you like that iced or hot?", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 4, 
+            "slotTypeVersion": "$LATEST",
+            "description": "Determines BeverageTemp(iced/hot)"
+        },
+        {
+            "slotType": "cafeStrength", 
+            "name": "BeverageStrength",
+            "slotConstraint": "Optional", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "Single or double?", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 5, 
+            "slotTypeVersion": "$LATEST",
+            "description": "Determines the number of shots"
+        }, 
+        {
+            "slotType": "cafeFlavor", 
+            "name": "BeverageFlavor", 
+            "slotConstraint": "Optional", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "What flavor?", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 6, 
+            "slotTypeVersion": "$LATEST",
+            "description": "Determines the flavor"
+        }, 
+        {
+            "slotType": "cafeBeverageExtras", 
+            "name": "BeverageExtras", 
+            "slotConstraint": "Optional", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "extras?", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 7, 
+            "slotTypeVersion": "$LATEST",
+            "description": "Determines whether any extras are needed"
+        }
+    ], 
+    "fulfillmentActivity": {
+        "type": "ReturnIntent"
+    }, 
+    "description": "Place an order after the requirements have been fulfilled"
+}

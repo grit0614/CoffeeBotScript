@@ -1,0 +1,27 @@
+{
+    "enumerationValues": [
+        {
+            "value": "coffee"
+        },
+        {
+            "value": "cappuccino"
+        },
+        {
+            "value": "latte"
+        },
+        {
+            "value": "mocha"
+        },
+        {
+            "value": "chai"
+        },
+        {
+            "value": "espresso"
+        },
+        {
+            "value": "smoothie"
+        }
+    ],
+    "name": "cafeBeverageType",
+    "description": "Types of beverages that can be ordered from this Chatbot"
+}    

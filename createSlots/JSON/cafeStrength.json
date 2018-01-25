@@ -1,0 +1,22 @@
+{
+    "enumerationValues": [
+        {
+            "value": "single"
+        },
+        {
+            "value": "double"
+        },
+        {
+            "value": "triple"
+        },
+        {
+            "value": "quad"
+        },
+        {
+            "value": "quadruple"
+        }
+    ],
+    "name": "cafeStrength",
+    "description": "Strength of coffee that can be ordered from this Chatbot"
+}
+                                

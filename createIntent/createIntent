@@ -1,0 +1,2 @@
+#!/bin/bash
+aws lex-models put-intent --region eu-west-1 --name cafeOrderBeverageIntent --cli-input-json file://./JSON/cafeOrderBeverageIntent.json

@@ -1,0 +1,16 @@
+{
+    "enumerationValues": [
+        {
+            "value": "kids"
+        },
+        {
+            "value": "hot"
+        },
+        {
+            "value": "iced"
+        }
+    ],
+    "name": "cafeBeverageTemp",
+    "description": "Temperature of coffee that can be ordered from this Chatbot"
+}
+                                

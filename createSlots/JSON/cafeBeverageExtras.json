@@ -1,0 +1,13 @@
+{
+    "enumerationValues": [
+        {
+            "value": "half sweet"
+        },
+        {
+            "value": "semi sweet"
+        }
+    ],
+    "name": "cafeBeverageExtras",
+    "description": "Sweetness of coffee that can be ordered from this Chatbot"
+}
+                                

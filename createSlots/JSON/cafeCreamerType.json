@@ -1,0 +1,31 @@
+{
+    "enumerationValues": [
+        {
+            "value": "two percent"
+        },
+        {
+            "value": "skim milk"
+        },
+        {
+            "value": "soy"
+        },
+        {
+            "value": "almond"
+        },
+        {
+            "value": "whole"
+        },
+        {
+            "value": "non-fat"
+        },
+        {
+            "value": "skim"
+        },
+        {
+            "value": "half and half"
+        }
+    ],
+    "name": "cafeCreamerType",
+    "description": "Types of creamers that can be ordered from this Chatbot"
+}
+                                

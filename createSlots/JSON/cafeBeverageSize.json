@@ -1,0 +1,40 @@
+{
+    "enumerationValues": [
+        {
+            "value": "kids"
+        },
+        {
+            "value": "small"
+        },
+        {
+            "value": "medium"
+        },
+        {
+            "value": "large"
+        },
+        {
+            "value": "extra large"
+        },
+        {
+            "value": "short"
+        },
+        {
+            "value": "six ounce"
+        },
+        {
+            "value": "eight ounce"
+        },
+        {
+            "value": "twelve ounce"
+        },
+        {
+            "value": "sixteen ounce"
+        },
+        {
+            "value": "twenty ounce"
+        }
+    ],
+    "name": "cafeBeverageSize",
+    "description": "Size of coffee that can be ordered from this Chatbot"
+}
+                                

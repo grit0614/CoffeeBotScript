@@ -1,0 +1,22 @@
+{
+    "enumerationValues": [
+        {
+            "value": "vanilla"
+        },
+        {
+            "value": "almond"
+        },
+        {
+            "value": "French vanilla"
+        },
+        {
+            "value": "caramel"
+        },
+        {
+            "value": "hazelnut"
+        }
+    ],
+    "name": "cafeFlavor",
+    "description": "Flavor of coffee that can be ordered from this Chatbot"
+}
+                                

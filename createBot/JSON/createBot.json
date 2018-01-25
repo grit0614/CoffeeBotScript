@@ -1,0 +1,31 @@
+{
+    "intents": [
+        {
+            "intentVersion": "$LATEST",
+            "intentName": "cafeOrderBeverageIntent"
+        }
+    ],
+    "name": "CoffeeBot",
+    "locale": "en-US",
+    "abortStatement": {
+        "messages": [
+            {
+                "content": "Sorry, I'm not able to assist at this time",
+                "contentType": "PlainText"
+            }
+        ]
+    },
+    "clarificationPrompt": {
+        "maxAttempts": 2,
+        "messages": [
+            {
+                "content": "I didn't understand you, what would you like to do?",
+                "contentType": "PlainText"
+            }
+        ]
+    },
+    "voiceId": "Joanna",
+    "childDirected": false,
+    "idleSessionTTLInSeconds": 600,
+    "description": "Bot to order coffee on the behalf of a user"
+}

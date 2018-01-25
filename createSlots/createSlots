@@ -1,0 +1,8 @@
+#!/bin/bash
+aws lex-models put-slot-type --region eu-west-1 --name cafeBeverageType --cli-input-json file://./JSON/cafeBeverageType.json
+aws lex-models put-slot-type --region eu-west-1 --name cafeCreamerType --cli-input-json file://./JSON/cafeCreamerType.json
+aws lex-models put-slot-type --region eu-west-1 --name cafeStrength --cli-input-json file://./JSON/cafeStrength.json
+aws lex-models put-slot-type --region eu-west-1 --name cafeFlavor --cli-input-json file://./JSON/cafeFlavor.json
+aws lex-models put-slot-type --region eu-west-1 --name cafeBeverageSize --cli-input-json file://./JSON/cafeBeverageSize.json
+aws lex-models put-slot-type --region eu-west-1 --name cafeBeverageTemp --cli-input-json file://./JSON/cafeBeverageTemp.json
+aws lex-models put-slot-type --region eu-west-1 --name cafeBeverageExtras --cli-input-json file://./JSON/cafeBeverageExtras.json

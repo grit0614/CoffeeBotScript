@@ -1,0 +1,2 @@
+#!/bin/bash
+aws lex-models put-bot --region eu-west-1 --name CoffeeBot --cli-input-json file://./JSON/createBot.json
